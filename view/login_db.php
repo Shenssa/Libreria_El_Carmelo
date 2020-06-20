@@ -12,7 +12,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 	$password = $_POST['pass'];
 
 		try{
-			$conexion = new PDO('mysql:host=localhost;dbname=carmelo','root','');
+			$conexion = new PDO('mysql:host=localhost;dbname=prueba','root','');
 			
 
 		}catch (PDOException $e){
@@ -45,6 +45,5 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 }
 
 require 'login.php';
-
 
 ?>
